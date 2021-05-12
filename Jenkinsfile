@@ -1,8 +1,8 @@
 pipeline {
   agent {
     docker {
+      args '--network docker-net'
       image 'node:12'
-      args '--network jenkins-net'
     }
 
   }
